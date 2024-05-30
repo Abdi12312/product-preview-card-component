@@ -17,23 +17,29 @@ body {
     font-size: 1rem;
     margin: 100px auto;
     background-color: var(--Cream);
+    min-height: 100vh;
 }
 
 img {
     max-inline-size: 100%;
     block-size: auto;
+    max-width: 100%;
 }
-
+.main {
+    padding: 0 30px;
+}
 .main section {
     margin: 10px auto;
     background-color: #FFF;
-    width: 20rem;
+    /* width: 20rem; */
     border-radius: .8em;
 }
 @media(min-width: 768px) {
+    .main {
+        width: 700px;
+        margin: 0 auto;
+    }
     .main section {
-        width: 32em;
-        /* height: 30em; */
         display: flex;
     }
 }
@@ -41,6 +47,8 @@ img {
 @media(min-width: 768px) {
     .main figure {
         width: 50%;
+        overflow: hidden;
+        object-fit: cover;
     }   
 }
 .main figure .desk-img {
@@ -81,6 +89,7 @@ img {
 @media (min-width: 768px) {
     .main .card-info span {
         margin: 1em 0;
+        font-size: 1.5em;
     }
 }
 .main .card-info h1 {
@@ -90,7 +99,8 @@ img {
 }
 @media(min-width: 768px) {
     .main .card-info h1 {
-        font-size: 1.8em;
+        font-size: 2.8em;
+        margin-bottom: .7em;
     }
 }
 
@@ -99,7 +109,11 @@ img {
     font-size: .9em;
     line-height: 1.5;
 }
-
+@media(min-width: 768px) {
+    .main .card-info p {
+        margin-bottom: 1.2em;
+    }
+}
 
 .main .price {
     display: flex;
@@ -109,7 +123,7 @@ img {
 }
 @media(min-width: 768px) {
     .main .price {
-        margin-bottom: 1.2em;
+        margin-bottom: 2em;
     }   
 }
 .main .price .curent-price{
