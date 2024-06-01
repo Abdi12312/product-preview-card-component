@@ -12,30 +12,28 @@
 </head>
 <body>
   <main class="main">
-    <section>
-      <figure>
-        <img src="/images/image-product-desktop.jpg" alt="image-product-desktop" class="desk-img">
-        <img src="/images/image-product-mobile.jpg" alt="image-product-mobile" class="mob-img">
-      </figure>
-      <article class="card">
-        <article class="card-info">
-          <span>PERFUME</span>
-          <h1>Gabrielle Essence Eau De Parfum</h1>
-          <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.
-          </p>
-        </article>
-        <article class="price">
-          <span class="curent-price">$149.99</span>
-          <span class="old-price">$169.99</span>
-        </article>
-        <article class="cart">
-          <button class="btn">
-            <i class="fa-solid fa-cart-shopping"></i>
-          <span>Add to Cart</span>
-          </button>
-        </article>
-      </article>
-    </section>
+    <article class="Prod-card">
+      <picture class="prod-img">
+        <img class="img-mobile" src="images/image-product-mobile.jpg">
+        <img class="img-desktop" src="images/image-product-desktop.jpg">
+      </picture>
+      <div class="prod-details">
+        <p class="prod-category">PERFUME</p>
+        <h2 class="prod-name">Gabrielle Essence Eau De Parfum</h2>
+        <p class="product-description">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="prod-price">
+          <p class="new-price">$149.99</p>
+          <span class="old-price">$169.00</span>
+        </div>
+        <a href="#" class="cta-btn">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cta-text">Add to cart</span>
+        </a>
+      </div>
+    </article>
   </main>
   <!-- <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
